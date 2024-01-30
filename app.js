@@ -11,21 +11,19 @@ const giphiesList = document.querySelector(".giphies");
 // console.log(giphyURL.url);
 
 async function getGiphy() {
-  const giphies = await axios.get(
-    "http://api.giphy.com/v1/gifs/search?q=hilarious&api_key=MhAodEJIJxQMxW9XqxKjyXfNYdLoOIym"
+  const randomIdx = Math.floor(Math.random() * 50);
+  const giphy = await axios.get(
+    `http://api.giphy.com/v1/gifs/search?q=${userInput.value}&api_key=pjJ8e4H2kim2F7FW6qK7fV9KTiJUO6SI`
   );
-  giphiesData = giphies.data.data;
-  for (let giphyURL of giphiesData) {
-    console.log(giphyURL.url);
-    const newUrl = document.createElement("li");
-    newUrl.innerText = giphyURL.url;
-    giphiesList.append(newUrl);
-  }
+  console.log(giphy);
+  console.log(randomIdx);
+  console.log(giphy.data.data[randomIdx].url);
+  return giphy.data.data[randomIdx].url;
 }
-
-// console.log(getGiphy());
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   getGiphy();
 });
+
+// API key: pjJ8e4H2kim2F7FW6qK7fV9KTiJUO6SI
