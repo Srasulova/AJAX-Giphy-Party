@@ -5,8 +5,11 @@ img {
 }
 
 ul {
+  width: 100%;
   display: flex;
   gap: 2rem;
+  flex-wrap: wrap;
+  margin: 50px 20px;
 }
 
 li {
