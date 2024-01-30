@@ -1,7 +1,11 @@
+body {
+  background: #363535;
+}
+
 img {
   /* height: 200px;
   width: 200px; */
-  border: 10px solid black;
+  border: 10px solid white;
 }
 
 ul {
@@ -14,4 +18,76 @@ ul {
 
 li {
   list-style: none;
+}
+
+.formDiv {
+  margin-top: 5%;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.btn {
+  border-radius: 100px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  font-weight: bold;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btnSearch:hover {
+  box-shadow: rgba(169, 68, 66, 0.35) 0 -25px 18px -14px inset,
+    rgba(169, 68, 66, 0.25) 0 1px 2px, rgba(169, 68, 66, 0.25) 0 2px 4px,
+    rgba(169, 68, 66, 0.25) 0 4px 8px, rgba(169, 68, 66, 0.25) 0 8px 16px,
+    rgba(169, 68, 66, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+.btnSearch {
+  background-color: #d9534f; /* Dark Red */
+  box-shadow: rgba(169, 68, 66, 0.2) 0 -25px 18px -14px inset,
+    rgba(169, 68, 66, 0.15) 0 1px 2px, rgba(169, 68, 66, 0.15) 0 2px 4px,
+    rgba(169, 68, 66, 0.15) 0 4px 8px, rgba(169, 68, 66, 0.15) 0 8px 16px,
+    rgba(169, 68, 66, 0.15) 0 16px 32px;
+  color: #ffffff; /* White */
+}
+
+.btnRemove {
+  background-color: #161515; /* Dark Gray */
+  box-shadow: rgba(128, 128, 128, 0.2) 0 -25px 18px -14px inset,
+    rgba(128, 128, 128, 0.15) 0 1px 2px, rgba(128, 128, 128, 0.15) 0 2px 4px,
+    rgba(128, 128, 128, 0.15) 0 4px 8px, rgba(128, 128, 128, 0.15) 0 8px 16px,
+    rgba(128, 128, 128, 0.15) 0 16px 32px;
+  color: #ffffff; /* White */
+}
+
+.btnRemove:hover {
+  box-shadow: rgba(128, 128, 128, 0.35) 0 -25px 18px -14px inset,
+    rgba(128, 128, 128, 0.25) 0 1px 2px, rgba(128, 128, 128, 0.25) 0 2px 4px,
+    rgba(128, 128, 128, 0.25) 0 4px 8px, rgba(128, 128, 128, 0.25) 0 8px 16px,
+    rgba(128, 128, 128, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+#searchInput {
+  width: 40%;
+  border-radius: 100px;
+  border: 2px solid #d9534f;
+  padding-left: 10px;
+  color: #d9534f;
+}
+
+#searchInput:focus {
+  outline: 2px solid #d9534f;
 }
