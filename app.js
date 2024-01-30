@@ -9,7 +9,9 @@ const btnRemove = document.querySelector(".btnRemove");
 async function getGiphy() {
   const randomIdx = Math.floor(Math.random() * 50);
   const giphy = await axios.get(
-    `https://api.giphy.com/v1/gifs/search?q=${userInput.value}&api_key=pjJ8e4H2kim2F7FW6qK7fV9KTiJUO6SI`
+    `https://api.giphy.com/v1/gifs/search?q=${userInput.value
+      .toLowerCase()
+      .trim()}&api_key=pjJ8e4H2kim2F7FW6qK7fV9KTiJUO6SI`
   );
   console.log(giphy);
   console.log(randomIdx);
