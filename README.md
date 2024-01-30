@@ -1,4 +1,4 @@
-#Gif search project
+# Gif search project
 
 ## It allows the user to search for a GIF.
 ## When the form is submitted, it makes an AJAX request to the Giphy API and returns a single GIF.
